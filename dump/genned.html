@@ -1,0 +1,1756 @@
+<html lang="ru"><head>
+    <title>Быстрый ввод адресов по ФИАС, компаний по ЕГРЮЛ, банков, ФИО и email</title>
+    <meta name="description" content="Скрипты для быстрого ввода ФИО, адресов, реквизитов, компаний и email. Получите от клиентов адреса по КЛАДР и ФИАС, реквизиты по ЕГРЮЛ и ЕГРИП. Проверяем ФИО и email при вводе.">
+    <meta name="keywords" content="КЛАДР, ФИАС, почтовый адрес, телефон, e-mail, реквизиты по ИНН, реквизиты по названию">
+    <meta property="og:title" content="Быстрый ввод адреса по КЛАДР/ФИАС, компании по ЕГРЮЛ/ЕГРИП, проверка ФИО и email">
+    <meta property="og:url" content="https://dadata.ru/suggestions/">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8">
+    <meta name="yandex-verification" content="4caf5bbeb65a1ee6">
+    <meta name="google-site-verification" content="HU7PuL1pqYaGHemRgvEdlsp2LPHLLVv8j3MXfGUGRpA">
+    <meta property="og:image" content="/static/i/dadata.png">
+    <meta property="og:site_name" content="Dadata.ru">
+    <meta property="fb:admins" content="570982356246361">
+
+    <link rel="shortcut icon" href="/static/favicon.ico" sizes="16x16" type="image/vnd.microsoft.icon">
+    <link rel="icon" href="/static/favicon.png" sizes="16x16" type="image/png">
+
+
+    <link rel="stylesheet" href="/static/CACHE/css/bfcdb1eabe31.css" type="text/css">
+
+
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="main/suggestions" src="/static/js/build/18.10.2/main/suggestions.js"></script></head>
+<body class=""><span><span style="display:none;">fix</span><style type="text/css"> #ue-dlg { z-index: 100003; display: block; text-align: left; margin: -2em auto 0 auto; position: absolute; background-color: transparent; border:0; } #ue-dlg-content { border:0; background:0; display: none; } #ue-loading-indicator { background-color:white; border: 7px solid #BBB; border: 7px solid rgba(150, 150, 150, 0.38); -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, .35); -moz-box-shadow: 0 10px 50px rgba(0,0,0,.35); box-shadow: 0 10px 50px rgba(0, 0, 0, .35); padding: 10px; margin-left: 330px; margin-top: 250px; } #ue-overlay { position: absolute; z-index:100002; width: 100%; height: 100%; left: 0; top: 0; background-color: #000; filter: alpha(opacity=10); -ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=10)'; opacity: .1; } #ue-dlg[id], #ue-overlay[id] { position:fixed; } #ue-overlay p { padding: 5px; color: #ddd; font: bold 14px arial, sans-serif; margin: 0; letter-spacing: -1px; } * html.dlg-open body { height: 100%; } * html.dlg-open, * html.dlg-open body { overflow: hidden; } html.dlg-open object, html.dlg-open embed, * html.dlg-open select { visibility: hidden; } * html #ue-overlay { width: 110%; } * html #ue-dlg #ue-dlg-close { background: none; }</style></span><span><span style="display:none;">fix</span><style type="text/css"> .ue-tab-container {z-index: 100001 !important;position: fixed;right: 0px;top:35%;} .ue-button { border: 1px solid #fff; box-shadow: rgba(255, 255, 255, 0.247059) 1px 1px 1px inset, rgba(0, 0, 0, 0.498039) 0px 1px 3px; font:bold 14px Arial, sans-serif; line-height: 1em; overflow: hidden; cursor:pointer; top: 0%; z-index: 9999; display: block; background-position: center 0px; background-repeat: no-repeat; background-color: #94989E; float: right; -webkit-transition:0.3s ease-out background-color,0.1s ease-out padding-right; -moz-transition:0.3s ease-out background-color,0.1s ease-out padding-right; } .ue-button:hover { background-color: #94989E; padding-right:3px; } .ue-right { border-right-width: 0px; border-style: solid none solid solid; border-radius: 5px 0px 0px 5px; } .ue-bottom { float: left; border-bottom-width: 0px; border-style: solid solid solid solid; border-radius: 5px 5px 0px 0px; } .ue-top { float: left; border-top-width: 0px; border-style: solid solid solid solid; border-radius: 0px 0px 5px 5px; } .ue-left.ue-button { left: 0px; border-left-width: 0px; border-style: solid solid solid none; border-radius: 0 5px 5px 0; } .ue-left.ue-button #ueTabLabel { padding:0px 0px 0px 0px !important; border-radius: 0 5px 5px 0; } .ue-right.ue-button #ueTabLabel { padding:10px 0px 0px 0px !important; } .ue-button.ue-chat.ue-bottom, .ue-button.ue-chat.ue-top{ float:left; margin-right:5px } .ue-button.ue-chat.ue-left, .ue-button.ue-chat.ue-right{ margin-bottom:5px } .ue-button.ue-hidden { opacity: 0; filter: alpha(opacity=0); display: none; } </style><div href="#" onclick="return false;" class="ue-tab-container" style="width:27px;max-width:27px;position: fixed;right: 0px;top:35%;"><div id="ueChatButton" class="ue-button ue-right ue-chat ue-hidden" onclick="UE.Chat.open();"><img class="ueLabel" src="https://cdn.userecho.com/tabs/020FFFFFF100000055/0YfQsNGC" style="width:27px;max-width:27px;vertical-align:top; border:0; background-color: transparent; padding:0; margin:0;"></div><div id="ueButton" class="ue-button ue-right ue-feedback" onclick="UE.Popin.show(); return false;"> <img class="ueLabel" src="https://cdn.userecho.com/tabs/120FFFFFF100000055/0LfQsNC00LDRgtGMINCy0L7Qv9GA0L7RgQ%3D%3D" srcset="https://cdn.userecho.com/tabs/120FFFFFF100000055/0LfQsNC00LDRgtGMINCy0L7Qv9GA0L7RgQ%3D%3D 1x,https://cdn.userecho.com/tabsx2/120FFFFFF100000055/0LfQsNC00LDRgtGMINCy0L7Qv9GA0L7RgQ%3D%3D 2x" style="width:27px;max-width:27px;vertical-align:top; border:0; background-color: transparent; padding:0; margin:0;"> </div></div></span>
+
+
+<header id="header" class="header">
+    <div class="storey header__body">
+        <div class="header__logo"><a href="/">DaData.ru</a></div>
+        <div class="header__menu hidden-mobile">
+
+
+
+
+            <div class="header__menu-item hidden-mobile">
+                <span>Подсказки</span>
+            </div>
+
+
+
+
+            <div class="header__menu-item hidden-mobile">
+                <a href="/merging/">Поиск дублей</a>
+            </div>
+
+
+
+
+            <div class="header__menu-item hidden-mobile">
+                <a href="/api/">API</a>
+            </div>
+
+
+            <div class="header__menu-item header__menu-item--support"><a href="/support/"><i></i>Служба поддержки</a></div>
+
+
+            <div class="header__login-button"><a href="#authorization_popup" class="fancybox">Войти</a></div>
+
+        </div>
+    </div>
+    <noscript>
+        <div class="header__no-js-message">Включите JavaScript, без него Дадата не работает.</div>
+    </noscript>
+</header>
+
+
+<div class="flex-auto suggestions">
+
+
+
+
+
+
+
+    <section class="storey motto">
+        <div class="frow center-xs">
+            <div class="col-xs-12 col-sm-10">
+                <h1 class="motto__title">«Подсказки»</h1>
+            </div>
+        </div>
+        <div class="frow center-xs">
+            <div class="col-xs-10 col-sm-6">
+                <p class="motto__body">
+                    Быстрый ввод
+                    <a href="#for-address" class="js-motto-switch motto__switch--active">адресов</a>,
+                    <a href="#for-party" class="js-motto-switch">компаний</a>,
+                    банков, ФИО, email и&nbsp;ещё много чего
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="brave" class="storey brave">
+        <div class="js-motto" data-for="for-address">
+            <div class="brave__step-one">
+                <a id="do-demo" href="#address" class="link-image brave__do-demo">
+                    <img src="/static/i/suggestions/suggestions-brave-address-1.png">
+                    <span class="brave__do-demo-tip js-tip">Нажмите, чтобы попробовать вживую</span>
+                </a>
+            </div>
+            <div class="frow">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="brave__step-two">
+                        <img src="/static/i/suggestions/suggestions-brave-address-2.png">
+                    </div>
+                    <div class="brave__tip hidden-mobile">
+                        <b>«Подсказки» разложат адрес по&nbsp;полям<br>
+                            и расскажут другие полезные сведения</b>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 brave__additional">
+                    <h5>Дополнительная информация</h5>
+                    <p>
+                        <b class="brave__label">Код ФИАС</b><br>
+                        5ee84ac0-eb9a-4b42-b814-2f5f7c27c255
+                    </p>
+                    <p>
+                        <b class="brave__label">Часовой пояс</b><br>
+                        Московское время (UTC+3)
+                    </p>
+                    <p>
+                        <b class="brave__label">Район</b><br>
+                        Северное Медведково
+                    </p>
+                    <p>
+                        <b class="brave__label">Ближайшее метро</b><br>
+                        <i class="fa fa-square" style="color: #F07E24"></i> Бабушкинская (1.1 км)
+                    </p>
+                    <p>
+                        <b class="brave__label">Код налоговой</b><br>
+                        7715
+                    </p>
+                    <p>
+                        <b class="brave__label">Уровень по ФИАС</b><br>
+                        8 (дом)
+                    </p>
+                    <p>
+                        <b class="brave__label">Геокоординаты</b><br>
+                        <a href="http://maps.yandex.ru/?text=55.8783817,37.6539965">55.8783817, 37.6539965</a>,
+                        внутри МКАД
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="hidden js-motto" data-for="for-party">
+            <div class="brave__step-one">
+                <a id="do-demo-party" href="#party" class="link-image brave__do-demo">
+                    <img src="/static/i/suggestions/suggestions-brave-party-1.png">
+                    <span class="brave__do-demo-tip js-tip">Нажмите, чтобы попробовать вживую</span>
+                </a>
+            </div>
+            <div class="frow">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="brave__step-two">
+                        <img src="/static/i/suggestions/suggestions-brave-party-2.png">
+                    </div>
+                    <div class="brave__tip hidden-mobile">
+                        <b>«Подсказки» заполнят реквизиты<br>
+                            и расскажут другие полезные сведения</b>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 brave__additional">
+                    <h5>Дополнительная информация</h5>
+                    <p>
+                        <b class="brave__label">Генеральный директор</b><br>
+                        Чех Илья Игоревич
+                    </p>
+                    <p>
+                        <b class="brave__label">Учредители</b><br>
+                        Андрей Давидюк, Илья Чех,<br>
+                        Руслан Бабинцев, Василий Хлебников
+                    </p>
+                    <p>
+                        <b class="brave__label">ОКВЭД</b><br>
+                        72.19 (2014)<br>
+                        Научные исследования и&nbsp;разработки в&nbsp;области естественных и&nbsp;технических наук прочие
+                    </p>
+                    <p>
+                        <b class="brave__label">Налоговая инспекция</b><br>
+                        Межрайонная инспекция ФНС №&nbsp;46 по&nbsp;г.&nbsp;Москве<br>
+                        125373, г&nbsp;Москва, проезд Походный, д&nbsp;3&nbsp;стр&nbsp;2<br>
+                        код 7746
+                    </p>
+                    <p>
+                        <b class="brave__label">Уставной капитал</b><br>
+                        40 000 ₽
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="demo" class="module how">
+        <div class="storey">
+            <h2 class="module__title how__title">Как это работает
+                <span class="title-link">
+<a class="link-white" href="/suggestions/usage/">
+инструкция по настройке
+</a>
+</span>
+            </h2>
+            <div class="standalone how__demo">
+                <div class="plaintabs">
+                    <ul class="plaintabs__header">
+                        <li class="plaintabs__item plaintabs__item--active">
+                            <a href="#address" data-focus="#address-input">Адрес</a>
+                        </li>
+                        <li class="plaintabs__item">
+                            <a href="#address-granular">Адрес отд. полями</a>
+                        </li>
+                        <li class="plaintabs__item">
+                            <a href="#party" data-focus="#party-input">Организация</a>
+                        </li>
+                        <li class="plaintabs__item">
+                            <a href="#bank" data-focus="#bank-input">Банк</a>
+                        </li>
+                        <li class="plaintabs__item">
+                            <a href="#name" data-focus="#fullname-input">ФИО</a>
+                        </li>
+                        <li class="plaintabs__item">
+                            <a href="#name-granular">ФИО отд. полями</a>
+                        </li>
+                        <li class="plaintabs__item">
+                            <a href="#email" data-focus="#email-input">Email</a>
+                        </li>
+                        <li class="plaintabs__item">
+                            <a href="#outward" data-focus="#outward-input">Прочие</a>
+                        </li>
+                    </ul>
+                    <div class="plaintabs__content">
+                        <div class="sgt-demo">
+                            <div id="address" class="plaintabs__tab plaintabs__tab--active">
+                                <div id="address-vue-app"><h5><label for="address-input">Город, улица, дом, квартира</label></h5> <div><input id="address-input" data-ref="input" type="text" placeholder="Введите адрес в свободной форме" class="js-sgt-query suggestions-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="box-sizing: border-box;"><div class="suggestions-wrapper"><span class="suggestions-addon" data-addon-type="spinner" style="display: block; left: 825px; top: -41px; height: 40px; width: 40px; opacity: 0.0461799;"></span><ul class="suggestions-constraints" style="left: 11px; top: -21px;"></ul><div class="suggestions-suggestions" style="position: absolute; left: 0px; top: -1px; display: none; width: 866px;"></div></div></div> <div class="frow hidden-mobile"><div class="col-xs-12 col-sm-4 col-sm-offset-8"><aside class="sgt-hint sgt-hint_main">Введите адрес</aside></div></div> <div class="sgt-demo__input-settings"><input id="address-enable-foreign" data-ref="enable-foreign" type="checkbox"> <label for="address-enable-foreign" class="checkbox-label">включая иностранные города</label></div> <!----> <!----> <!----> <div class="frow form-group"><div class="col-xs-12 align-right">
+                                    Сведения актуальны на 03.12.2018
+                                </div></div></div>
+                            </div>
+                            <div id="address-granular" class="plaintabs__tab" style="display: none;">
+                                <div id="address-granular-vue-app"><div class="js-granular address-granular"><div class="frow"><div class="col-xs-12 col-sm-2"><label for="address-postal_code-granular" class="sgt-granular_label">Индекс</label></div> <div class="col-xs-12 col-sm-6"><input data-ref="postal-code" type="text" placeholder="определяется автоматически" readonly="readonly" class="sgt-granular_input sgt-granular_input"> <!----></div></div> <div class="frow form-group"><div class="col-xs-12 col-sm-2"><label class="sgt-granular_label">Регион / район</label></div> <div class="col-xs-12 col-sm-6"><input data-ref="region" type="text" class="sgt-granular_input suggestions-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="box-sizing: border-box;"> <!----> <!----></div> <div class="col-xs-12 col-sm-4 hidden-mobile"><aside class="sgt-hint sgt-hint_surname">&nbsp;</aside></div></div> <div class="frow form-group"><div class="col-xs-12 col-sm-2"><label for="address-city-granular" class="sgt-granular_label">Город / н.п.</label></div> <div class="col-xs-12 col-sm-6"><input data-ref="city" type="text" class="sgt-granular_input suggestions-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="box-sizing: border-box;"> <!----></div> <div class="col-xs-12 col-sm-4 hidden-mobile"><aside class="sgt-hint sgt-hint_name">От региона до дома<br> работают подсказки</aside></div></div> <div class="frow form-group"><div class="col-xs-12 col-sm-2"><label for="address-street" class="sgt-granular_label">Улица</label></div> <div class="col-xs-12 col-sm-6"><input data-ref="street" type="text" class="sgt-granular_input suggestions-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="box-sizing: border-box;"> <!----> <!----></div></div> <div class="frow form-group"><div class="col-xs-12 col-sm-2"><label for="address-house-granular" class="sgt-granular_label">Дом</label></div> <div class="col-xs-6"><input data-ref="house" type="text" class="sgt-granular_input suggestions-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="box-sizing: border-box;"></div></div> <div class="frow form-group"><div class="col-xs-12 col-sm-2"><label for="address-flat" class="sgt-granular_label">Квартира</label></div> <div class="col-xs-12 col-sm-6"><input data-ref="flat" type="text" class="sgt-granular_input"> <!----></div></div> <div class="frow form-group"><!----></div></div> <div class="frow form-group"><div class="col-xs-12 align-right">
+                                    Сведения актуальны на 03.12.2018
+                                </div></div></div>
+                            </div>
+                            <div id="party" class="plaintabs__tab" style="display: none;">
+                                <div id="party-vue-app"><h5><label for="party-input">Организация или ИП</label></h5> <div><input id="party-input" data-ref="input" type="text" placeholder="Введите название в свободной форме, адрес, ИНН или ОГРН" class="js-sgt-query suggestions-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="box-sizing: border-box;"></div> <div class="frow hidden-mobile"><div class="col-xs-12 col-sm-4 col-sm-offset-7"><aside class="sgt-hint sgt-hint_main">Введите название, ИНН или адрес</aside></div></div> <!----> <div class="frow form-group"><div class="col-xs-12 align-right">
+                                    Сведения актуальны на 22.12.2018
+                                </div></div></div>
+                            </div>
+                            <div id="bank" class="plaintabs__tab" style="display: none;">
+                                <div id="bank-vue-app"><h5><label for="bank-input">Банк</label></h5> <div><input id="bank-input" data-ref="input" type="text" placeholder="Введите название, БИК или SWIFT" class="js-sgt-query suggestions-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="box-sizing: border-box;"></div> <div class="frow hidden-mobile"><div class="col-xs-12 col-sm-5 col-sm-offset-7"><aside class="sgt-hint sgt-hint_main">Введите название, БИК или SWIFT</aside></div></div> <!----> <div class="frow form-group"><div id="bank-actuality_date" class="col-xs-12 align-right">
+                                    Сведения актуальны на 22.12.2018
+                                </div></div></div>
+                            </div>
+                            <div id="name" class="plaintabs__tab" style="display: none;">
+                                <div id="name-vue-app"><h5><label for="fullname-input">ФИО</label></h5> <div class="has-feedback"><input id="fullname-input" data-ref="input" type="text" placeholder="Введите ФИО в свободной форме" class="js-sgt-query suggestions-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="box-sizing: border-box;"></div> <div class="frow hidden-mobile"><div class="col-xs-12 col-sm-4 col-sm-offset-8"><aside class="sgt-hint sgt-hint_main">Введите ФИО</aside></div></div> <!----> <!----></div>
+                            </div>
+                            <div id="name-granular" class="plaintabs__tab" style="display: none;">
+                                <div id="name-granular-vue-app"><div class="js-granular"><div class="frow"><div class="col-xs-12 col-sm-2"><label class="sgt-granular_label">Фамилия</label></div> <div class="col-xs-12 col-sm-6"><input data-ref="surname" type="text" class="sgt-granular_input suggestions-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="box-sizing: border-box;"></div> <div class="col-xs-12 col-sm-4 hidden-mobile"><aside class="sgt-hint sgt-hint_surname">&nbsp;</aside></div></div> <div class="frow form-group"><div class="col-xs-12 col-sm-2"><label class="sgt-granular_label">Имя</label></div> <div class="col-xs-12 col-sm-6"><input data-ref="name" type="text" class="sgt-granular_input suggestions-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="box-sizing: border-box;"></div> <div class="col-xs-12 col-sm-4 hidden-mobile"><aside class="sgt-hint sgt-hint_name">Для каждого из полей<br> работают подсказки</aside></div></div> <div class="frow form-group"><div class="col-xs-12 col-sm-2"><label class="sgt-granular_label">Отчество</label></div> <div class="col-xs-12 col-sm-6"><input data-ref="patronymic" type="text" class="sgt-granular_input suggestions-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="box-sizing: border-box;"></div></div> <!----> <!----> <!----> <div class="frow form-group"><div class="col-xs-12 col-sm-8"><!----></div></div></div></div>
+                            </div>
+                            <div id="email" class="plaintabs__tab" style="display: none;">
+                                <div id="email-vue-app"><h5><label for="email-input">Email</label></h5> <div><input id="email-input" data-ref="input" type="text" placeholder="Введите адрес электронной почты" class="js-sgt-query suggestions-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="box-sizing: border-box;"></div> <div class="frow hidden-mobile"><div class="col-xs-12 col-sm-4 col-sm-offset-8"><aside class="sgt-hint sgt-hint_main">Введите email</aside></div></div> <!----></div>
+                            </div>
+                            <div id="outward" class="plaintabs__tab" style="display: none;">
+                                <div id="outward-vue-app"><h5><label>Справочник</label></h5> <div><select type="text"><option value="country" selected="selected">Страны</option> <option value="currency">Валюты</option> <option value="postal_office">Почтовые отделения</option> <option value="fns_unit">Налоговые инспекции</option> <option value="okved2">ОКВЭД</option> <option value="okpd2">ОКПД</option></select></div> <div class="form-group"><input type="text" placeholder="Начните писать, чтобы увидеть подсказки" class="js-sgt-query suggestions-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="box-sizing: border-box;"></div> <!----></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="try" class="module storey try">
+        <a href="#registration_popup" class="fancybox mega-button" data-source="SUGGESTIONS">
+            Подключить бесплатно
+        </a>
+        <div class="try__subtitle">
+            <p>10&nbsp;тысяч
+                <a href="#query">запросов</a> в&nbsp;день
+                <br> ≈&nbsp;300&nbsp;заполненных форм</p>
+        </div>
+        <div class="frow around-xs">
+            <div class="col-xs-11 col-sm-6">
+                <div id="query" class="query hidden">
+                    <h5 class="query__header">1 символ адреса = 1 запрос</h5>
+                    <table class="table pricing__table">
+                        <tbody>
+                        <tr>
+                            <td>ввести один адрес</td>
+                            <td>10–30 запросов</td>
+                        </tr>
+                        <tr>
+                            <td>ФИО, email, компанию или банк</td>
+                            <td>10–20 запросов</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="features" class="module features">
+        <div class="storey features__container">
+            <h2 class="module__title">«Подсказки» помогут ввести</h2>
+            <div class="frow">
+                <div class="col-xs-12 col-sm-4">
+                    <h5 class="color-teal">Почтовый адрес</h5>
+                    <p>Разбитый по&nbsp;КЛАДР / ФИАС.
+                        Без&nbsp;опечаток, с&nbsp;квартирой и&nbsp;индексом от&nbsp;Почты. С&nbsp;районом города и&nbsp;координатами.</p>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <h5 class="color-teal">Реквизиты компании и&nbsp;ИП</h5>
+                    <p>Название организации, адрес, ИНН, КПП, ОГРН и&nbsp;ФИО&nbsp;руководителя</p>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <h5 class="color-teal">ФИО</h5>
+                    <p>Без&nbsp;опечаток и с&nbsp;полом</p>
+                    <h5 class="color-teal">Email</h5>
+                    <p>Без&nbsp;опечаток</p>
+                </div>
+
+            </div>
+            <div class="frow features__row">
+                <div class="col-xs-12 col-sm-4 col-sm-offset-2">
+                    <h5 class="color-teal">Банк</h5>
+                    <p>Название, БИК, SWIFT и&nbsp;корр.&nbsp;счёт</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 first-sm">
+                    <h3>
+                        <a href="/suggestions/outward/">И&nbsp;любые другие справочники</a>
+                    </h3>
+                    <p>Почтовые отделения, налоговые инспекции, страны, валюты, ОКВЭД, ОКПД, ...</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="platforms" class="module platforms">
+        <div class="storey">
+            <h2 class="module__title align-center">С чем работают «Подсказки»</h2>
+            <div class="js-popular">
+                <div class="frow center-xs">
+                    <div class="col-xs-12">
+                        <ul class="image-list">
+
+                            <li class="image-list__link">
+                                <a target="_blank" class="sprite-platform--1cbitrix" href="http://marketplace.1c-bitrix.ru/solutions/gorillas.dadata/">Битрикс</a>
+                            </li>
+                            <li class="image-list__link">
+                                <a target="_blank" class="sprite-platform--insales" href="https://github.com/hflabs/suggestions-insales/blob/master/README.md">InSales</a>
+                            </li>
+                            <li class="image-list__link">
+                                <a target="_blank" class="sprite-platform--vamshop" href="http://blog.vamshop.ru/2015/07/29/%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD-%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81-%D0%BF%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B7%D0%BE%D0%BA-dadata-ru-%D0%BF%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B7%D0%BA/">VamShop
+                                </a>
+                            </li>
+                            <li class="image-list__link">
+                                <a target="_blank" class="sprite-platform--modx" href="https://modstore.pro/packages/utilities/dadata">MODX</a>
+                            </li>
+
+                            <li class="image-list__link">
+                                <a target="_blank" class="sprite-platform--wordpress" href="https://1cbonus.ru/product/plagin-podskazok-dadata-woocommerce/">WordPress
+                                    <br>
+                                    <br>
+                                </a>
+                            </li>
+
+                            <li class="image-list__link">
+                                <a target="_blank" class="sprite-platform--amocrm" href="https://gnzs.ru/market/5">amoCRM
+                                    <br>
+                                    <br>
+                                </a>
+                            </li>
+                            <li class="image-list__link">
+                                <a class="sprite-platform--jquery" href="/suggestions/usage/">jQuery-плагин
+                                    <br>
+                                    <br>
+                                </a>
+                            </li>
+                            <li class="image-list__link">
+                                <a class="sprite-platform--rest" href="/api/suggest/">REST API
+                                    <br>
+                                    <br>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="frow center-xs platforms__all">
+                    <div class="col-xs-12 col-sm-6">
+                        <p class="hidden-mobile">
+                            <a href="#platforms-all" class="js-show-all">и ещё 50 готовых модулей</a>
+                        </p>
+                        <p class="hidden-desktop">
+                            и ещё 50 готовых модулей
+                        </p>
+                        <br>
+                        <p>Если вы&nbsp;разработчик&nbsp;— сделайте свой модуль
+                            <a href="https://dadata.userecho.com/topics/2979" target="_blank">по&nbsp;гайдлайну</a>, чтобы получить бесплатный пиар в&nbsp;рассылке и&nbsp;соцсетях Дадаты</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="platforms-all" class="js-all" style="display: none;">
+                <h3 class="platforms__subtitle">Онлайн-конструкторы интернет-магазинов и&nbsp;сайтов</h3>
+                <ul class="image-list">
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--insales" href="https://github.com/hflabs/suggestions-insales/blob/master/README.md">InSales</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--leadvertex" href="http://blog.leadvertex.ru/news/1081-avto-opredelenie-indeksa-utochnenie-i-ispravlenie-adresa-i-fio/">LeadVertex</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--phpshop" href="http://faq.phpshop.ru/page/dadata.html">PHPShop</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--shopexpress" href="http://shopexpress.difocus.ru/blog/news/Обновление%20виджета%20Корзина%202">ShopExpress</a>
+                    </li>
+
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--qnits" href="http://qnits.ru/">Qnits</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--storeland" href="https://github.com/hflabs/suggestions-storeland/blob/master/README.md">StoreLand
+                            <br>
+                            <br>
+                        </a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--ucoz" href="http://ucozmagazines.ru/blog/avtomaticheski_ispravljaem_oshibki_v_adresakh/2016-02-10-120">UCOZ
+                            <br>
+                            <br>
+                        </a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--ucoz" href="http://uscript.pro/shop/124/item/integracija-dostavki-pochtoj-rf">UCOZ
+                            <br>(с&nbsp;доставкой)</a>
+                    </li>
+                </ul>
+
+                <h3 class="platforms__subtitle">Системы управления сайтами (CMS)</h3>
+                <ul class="image-list">
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--1cbitrix" href="http://marketplace.1c-bitrix.ru/solutions/gorillas.dadata/">Битрикс:
+                            <br>форма&nbsp;заказа</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--1cbitrix" href="http://marketplace.1c-bitrix.ru/solutions/gorillas.dadatagran/">Битрикс:
+                            <br>гранулярные</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--1cbitrix" href="http://marketplace.1c-bitrix.ru/solutions/gorillas.dadataadmin/">Битрикс:
+                            <br>админка</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--1cbitrix" href="http://marketplace.1c-bitrix.ru/solutions/sotbit.checkcompany/">Битрикс:
+                            <br>организации</a>
+                    </li>
+
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--bitrix24" href="http://marketplace.1c-bitrix.ru/solutions/mcart.dadata/">Битрикс24</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--amiro" href="https://www.amiro.ru/market/catalog/integrations/podskazki-dadataru">Amiro.CMS</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--cscart" href="https://www.ecom-labs.ru/cs-cart-multi-vendor-moduli/cs-cart-modul-dadata.html">CS-Cart</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--drupal" href="https://github.com/batkor/dadata_integration">Drupal 8</a>
+                    </li>
+
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--hika" href="https://github.com/inscriptios/plg_dadata_address_suggestions">HikaShop<br>
+                            <br></a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--joomla" href="http://beagler.ru/joomshopping/plagin-avtozapolneniya-adresa-dlya-joomshopping-servis-dadata-ru.html">Joomla
+                            <br>
+                            <br>
+                        </a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--modx" href="https://modstore.pro/packages/utilities/dadata">MODX
+                            <br>
+                            <br>
+                        </a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--modx" href="https://modstore.pro/packages/delivery/msdsector">MODX:
+                            <br>доставка</a>
+                    </li>
+
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--modx" href="https://modstore.pro/packages/users/organizations">MODX:
+                            <br>организации</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--moguta" href="http://mogutashop.ru/plugins/integratsiya-dadata-ru">Moguta.CMS<br><br></a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--okay" href="http://forum.okay-cms.com/viewtopic.php?p=1674">Okay CMS<br><br></a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="link-disabled sprite-platform--opencart" href="https://liveopencart.ru/opencart-moduli-shablony/moduli/zakaz/-oc-2-podskazki-dadata-pro-opencart-ocstore-2-x">OpenCart<br>(недоступен)</a>
+                    </li>
+
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--ncms" href="http://ncms.one/manual/ru/doc/misc/dadata.html">ηCMS</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--prestashop" href="https://github.com/hflabs/suggestions-prestashop">PrestaShop</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--readyscript" href="http://marketplace.readyscript.ru/addons/dadata/">ReadyScript</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--simpla" href="https://gist.github.com/nalgeon/9757624">Simpla</a>
+                    </li>
+
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--vamshop" href="http://blog.vamshop.ru/2015/07/29/%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD-%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81-%D0%BF%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B7%D0%BE%D0%BA-dadata-ru-%D0%BF%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B7%D0%BA/">VamShop<br><br></a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--virtuemart" href="http://beagler.ru/joomshopping/plagin-avtozapolneniya-adresa-dlya-joomshopping-servis-dadata-ru.html">VirtueMart
+                            <br>
+                            <br>
+                        </a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--webasyst" href="https://www.webasyst.ru/store/plugin/shop/dadata/">Webasyst
+                            <br>(ввод адреса)</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--webasyst" href="https://bodysite.ru/help/325/instruktsiya-po-nastroyke-plagina-zakaz-v-1-shag/">Webasyst
+                            <br>(заказ в&nbsp;1&nbsp;шаг)</a>
+                    </li>
+
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--webasyst" href="https://www.webasyst.ru/store/plugin/shop/cityselect/">Webasyst
+                            <br>(город по IP)</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--skeeks" href="https://packagist.org/packages/skeeks/cms-dadata-suggest">SkeekS
+                            <br>CMS</a>
+                    </li>
+
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--wordpress" href="https://1cbonus.ru/product/plagin-podskazok-dadata-woocommerce/">WordPress Woocommerce</a>
+                    </li>
+                </ul>
+
+                <h3 class="platforms__subtitle">CRM и бизнес-приложения</h3>
+                <ul class="image-list">
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--1c" href="http://infostart.ru/public/291869/">1С: адреса
+                            <br>
+                            <br>
+                        </a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--1c" href="https://1cbonus.ru/kontragent-po-inn/">1С: организации
+                            <br>
+                            <br>
+                        </a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--1c" href="http://infostart.ru/public/626584/">1С: организации
+                            <br>по списку</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--1c" href="http://infostart.ru/public/529087/">1С 7.7: организации
+                            <br>
+                            <br>
+                        </a>
+                    </li>
+
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--1c" href="http://infostart.ru/public/826897/">1С: Дадата + Росреестр
+                        </a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--gosuslugi" href="http://guides.gosuslugi.ru/gayd-po-sozdaniyu-interfeysa-epgu/elementy-form/vidzhet-fias-(dadata).html">Госуслуги
+                            <br>
+                            <br>
+                        </a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--clientbase" href="https://clientbase.ru/forum/index.php?s=12792d8276c9767fa33a44ee1b86c3ca&amp;showtopic=7482&amp;st=0">Клиентская
+                            <br>база</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--megaplan" href="http://polytell.ru/dadata">Мегаплан
+                            <br>
+                            <br>
+                        </a>
+                    </li>
+
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--moysklad" href="https://support.moysklad.ru/hc/ru/articles/213458777-%D0%9E%D0%BA%D1%82%D1%8F%D0%B1%D1%80%D1%8C-2015">МойСклад
+                            <br>
+                            <br>
+                        </a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--prostoy" href="https://www.prostoy.ru/help/203.html#point11">CRM «Простой бизнес»</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--samotour" href="http://dokuwiki.samo.ru/doku.php?id=onlinest:new:versija_201702#avtozapolnenie_polej_po_inn_agentstva_v_forme_registracii">САМО-тур
+                            <br>
+                            <br>
+                        </a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--urofis" href="http://araxgroup.ru/urofis/kontri/zapinn.htm">Юр. офис
+                            <br>
+                            <br>
+                        </a>
+                    </li>
+
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--abcp" href="https://www.abcp.ru/news/Uluchshenie-integrirovan-servis-podskazki-adresa-dostavki-dadataru">ABCP
+                        </a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--amocrm" href="https://gnzs.ru/market/5">amoCRM
+                        </a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--bpmonline" href="https://marketplace.terrasoft.ru/app/ws-dadata-bpmonline">Bpm’online</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--dataexpress" href="http://forum.mydataexpress.ru/viewtopic.php?t=1497">DataExpress</a>
+                    </li>
+
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--logushms" href="http://www.librahospitality.com/company/news/novaya-versiya-logus-hms-2-1--obnovlenie-funktsionala--integratsiya-s-bookingsuite-i-bitrix--vozmozh/">Logus HMS<br>
+                            <br></a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--mail365" href="http://www.mail365.ru/form_dadata.php">Mail365<br>
+                            <br></a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--monitorcrm" href="http://www.monitor-crm.ru/aboutint/dadata/">Monitor CRM
+                            <br>
+                            <br>
+                        </a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--dynamics" href="http://dynamics365crm.yolva-it.ru/2017/03/20/fast-create-organization-crm">Microsoft Dynamics&nbsp;CRM</a>
+                    </li>
+
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--dynamics" href="http://uque.ru/solutions/UqueAddress.html">Microsoft Dynamics&nbsp;NAV</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--priceplan" href="http://priceplan.ru/ru/integration/">PricePlan
+                            <br>
+                            <br>
+                        </a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--salesplatform" href="https://salesplatform.ru/integration-dadata-ru/">SalesPlatform
+                            <br>CRM</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--sugartalk" href="http://sugartalk.net/crm/modul-integratsii-sugartalk-crm-s-servisom-dadataru">SugarTalk
+                            <br>CRM</a>
+                    </li>
+
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--ucrm" href="https://vk.com/wall-73169318_172">U-CRM</a>
+                    </li>
+                </ul>
+
+                <h3 class="platforms__subtitle">Языки программирования и фреймворки</h3>
+                <ul class="sgt-platforms image-list">
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--android" href="https://github.com/Rody66/DaDataExample">Android</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--angular" href="https://github.com/kolkov/ngx-dadata">Angular</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--dotnet" href="https://github.com/hflabs/suggestions-csharp">C# / .NET</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--dart" href="https://github.com/kseregal/dadata_directive2">Dart</a>
+                    </li>
+
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--excel" href="https://gist.github.com/nalgeon/b5d0c7b72bb6b393475ae67e73c86ed3">Excel VBA
+                            <br>
+                            <br>
+                        </a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--go" href="https://github.com/webdeskltd/dadata">Go<br><br></a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--gas" href="https://gist.github.com/nalgeon/a6db0827dad7a97da906d6427c070883">Google
+                            <br>Apps Script</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--ios" href="https://github.com/InstaDev/IDDaDataSuggestions">iOS
+                            <br>
+                            <br>
+                        </a>
+                    </li>
+
+                    <li class="image-list__link">
+                        <a class="sprite-platform--jquery" href="/suggestions/usage/">jQuery-плагин
+                            <br>
+                            <br>
+                        </a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--laravel" href="https://packagist.org/packages/fomvasss/laravel-dadata">Laravel</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--meteor" href="https://atmospherejs.com/ksrv/autoform-dadataru">Meteor.js</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--node" href="https://www.npmjs.com/package/dadata-suggestions">Node.js</a>
+                    </li>
+
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--npm" href="https://www.npmjs.com/package/suggestions-jquery/">npm-пакет</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--oracle" href="https://gist.github.com/nalgeon/455736c5073c48edb4bde1264fa6b2d7">Oracle</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--php" href="https://gist.github.com/nalgeon/091d172ae316ad6b66eb6f6f94575639">PHP</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--php" href="https://gist.github.com/nalgeon/affa3f9fc7b665ab7744573455abe18d">PHP (cUrl)</a>
+                    </li>
+
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--python" href="https://gist.github.com/nalgeon/ffa9930d1a396c46fd888733ddb38d27">Python</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--rlang" href="https://gist.github.com/nalgeon/f1b5be65feb727dfd5ca555d3fafacdc">R</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--react" href="https://www.npmjs.com/package/react-dadata">React</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a class="sprite-platform--rest" href="/api/suggest/">REST API</a>
+                    </li>
+
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--ruby" href="https://github.com/gordienko/jquery-dadata-rails">Ruby on Rails</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--symfony" href="https://bitbucket.org/henui/dadata-api-bundle">Symfony</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--typeahead" href="https://gist.github.com/nalgeon/cb484b7d9f4cf23fc2537c36e488fc1a">typeahead.js</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--vue" href="https://github.com/evseevdev/vue-suggestions">Vue.js</a>
+                    </li>
+
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--windows" href="https://gist.github.com/nalgeon/195b6f69a3901262caa033a360c199b6">WinHttpRequest</a>
+                    </li>
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--windows" href="https://gist.github.com/nalgeon/f95ecfab833aa0916a9e936aca626049">XmlHttpRequest</a>
+                    </li>
+                </ul>
+
+                <h3 class="platforms__subtitle">Мессенджеры</h3>
+                <ul class="sgt-platforms image-list">
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--telegram" href="https://t.me/dadatabot">Telegram:
+                            <br>адреса</a>
+                    </li>
+
+                    <li class="image-list__link">
+                        <a target="_blank" class="sprite-platform--telegram" href="https://t.me/egrul_bot">Telegram:
+                            <br>компании</a>
+                    </li>
+                </ul>
+
+                <div class="platforms__developer frow">
+                    <div class="col-xs-6">
+                        <p>Если вы&nbsp;разработчик&nbsp;— сделайте свой модуль
+                            <a href="https://dadata.userecho.com/topics/2979" target="_blank">по&nbsp;гайдлайну</a>, чтобы получить бесплатный пиар в&nbsp;рассылке и&nbsp;соцсетях Дадаты</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="module storey reviews">
+
+        <h2 class="module__title">Уже на <span class="color-red">17 600 сайтов</span></h2>
+        <div class="frow">
+            <div class="col-xs-12 col-md-7">
+                <h5 class="review__header">
+                    <a target="_blank" class="review__link" href="https://vselaki.ru/">
+                        Интернет-магазин косметики «ВсеЛаки»
+                    </a>
+                </h5>
+                <div class="review__body">
+                    <p>До&nbsp;Дадаты было две проблемы:</p>
+                    <ol>
+                        <li>Адреса написаны всегда по-разному, приходилось переспрашивать сам адрес и&nbsp;индекс.</li>
+                        <li>Расчёт доставки вручную, клиент общался с&nbsp;менеджером по&nbsp;телефону.</li>
+                    </ol>
+                    <p>Дадата помогла решить обе:</p>
+                    <ol>
+                        <li>Адреса теперь стандартизированы&nbsp;— если человек не&nbsp;ввел адрес с&nbsp;точностью до&nbsp;дома,
+                            то&nbsp;заказ не&nbsp;оформляется. Это снимает нагрузку с&nbsp;менеджеров,
+                            и&nbsp;снижает вероятность ошибки.</li>
+                        <li>Мы&nbsp;точно знаем код ФИАС каждого адреса и&nbsp;смогли
+                            интегрировать сайт с&nbsp;курьерской службой.
+                            Клиент сам выбирает способ доставки на&nbsp;сайте,
+                            а&nbsp;не&nbsp;по&nbsp;телефону с&nbsp;менеджером.
+                            Удобнее всем&nbsp;— и&nbsp;клиенту, и&nbsp;менеджерам.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="frow">
+                    <div class="col-xs-12">
+                        <h5 class="review__header">
+                            <a target="_blank" class="review__link" href="https://axiomus.ru/">
+                                Курьерская служба «Аксиомус»
+                            </a>
+                        </h5>
+                        <div class="review__body">
+                            <p>Подключили Подсказки. Раньше на&nbsp;ручную обработку отправлялась до&nbsp;35% адресов по&nbsp;Москве и&nbsp;МО, теперь не&nbsp;более 15%.</p>
+                            <p>Удобное, современное и&nbsp;настраиваемое API и&nbsp;подсказки, «живой» контакт с&nbsp;разработчиками.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12">
+                        <h5 class="review__header">
+                            <a target="_blank" class="review__link" href="http://sezon-p.ru/">Магазин игрушек «Сезон Продаж»</a>
+                        </h5>
+                        <div class="review__body">
+                            <p>Спасибо за&nbsp;сервис! Теперь не&nbsp;нужно дописывать адреса доставки
+                                за&nbsp;клиентов. Все посылки приходят точно по&nbsp;месту назначения.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hflabs" class="module storey hflabs">
+        <div class="hflabs__label">
+            Сделано в
+            <a class="link-white" href="http://hflabs.ru">HFLabs</a>
+        </div>
+        <h2 class="module__title">«Подсказки» используют</h2>
+        <div class="frow">
+            <div class="col-xs-12 col-sm-4 image-list__link">
+                <a href="https://www.binbank.ru/" target="_blank" class="sprite-customers--binbank">Бинбанк</a>
+            </div>
+            <div class="col-xs-12 col-sm-4 image-list__link">
+                <a href="http://www.ikea.com/ru/ru/" target="_blank" class="sprite-customers--ikea">IKEA</a>
+            </div>
+            <div class="col-xs-12 col-sm-4 image-list__link">
+                <a href="https://www.kupivip.ru/" target="_blank" class="sprite-customers--kupivip">KUPIVIP.RU</a>
+            </div>
+        </div>
+        <div class="frow">
+            <div class="col-xs-12 col-sm-4 image-list__link">
+                <a href="http://www.ozon.ru/" target="_blank" class="sprite-customers--ozon">OZON.ru</a>
+            </div>
+            <div class="col-xs-12 col-sm-4 image-list__link">
+                <a href="http://www.deoshop.ru/" target="_blank" class="sprite-customers--deoshop">DeoShop.ru</a>
+            </div>
+            <div class="col-xs-12 col-sm-4 image-list__link">
+                <a href="https://tvoe.ru/" target="_blank" class="sprite-customers--tvoe">ТВОЕ</a>
+            </div>
+        </div>
+        <div class="hidden-mobile">
+            <div class="frow">
+                <div class="col-xs-12 col-sm-4 image-list__link">
+                    <a href="https://www.metro-cc.ru/" target="_blank" class="sprite-customers--metro">METRO Cash and Carry</a>
+                </div>
+                <div class="col-xs-12 col-sm-4 image-list__link">
+                    <a href="http://www.vseinstrumenti.ru/" target="_blank" class="sprite-customers--vseinstrumenti">Все инструменты</a>
+                </div>
+                <div class="col-xs-12 col-sm-4 image-list__link">
+                    <a href="https://iledebeaute.ru/" target="_blank" class="sprite-customers--iledebeaute">ИЛЬ ДЕ БОТЭ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a name="pricing"></a>
+
+    <section id="premium" class="module storey premium">
+        <h2 class="module__title">
+            Подписка на год
+
+            <span class="title-link">
+или
+<a href="#registration_popup" class="fancybox" data-source="SUGGESTIONS">подключить бесплатно</a>
+</span>
+
+        </h2>
+
+        <div id="suggestions-rates-vue-app"><div id="premium-suggestions-rates"><div class="frow"><div class="col-xs-12 col-sm-4 premium-plan"><div class="plan premium-plan__description"><h3>Тариф «Легкий» <!----></h3> <div><p>50 тысяч запросов в день<br>≈ 1 500 заполненных форм</p> <p>Все поля по&nbsp;ФИО, email и&nbsp;банку</p> <p>Базовые сведения по адресу и&nbsp;компании</p> <p><i class="fa fa-map-marker icon-small-squared"></i> Геокоординаты адреса</p> <p><i class="fa fa-book icon-small-squared"></i>
+            Публичные справочники
+            <a href="/suggestions/outward/" target="_blank" class="link-nondecorated"><i class="fa fa-question-circle"></i></a></p></div> <!----> <!----></div> <div class="plan premium-plan__action"><div data-ref="purchase-minimal"><button data-action="buy" data-plan="MINIMAL" class="button button--red plan__action">Купить за 5 000&nbsp;₽&nbsp;в&nbsp;год</button></div></div> <!----> <div class="plan premium-plan__legal legal"><div class="frow"><div class="col-xs-12 col-sm-7"><p class="legal__title">Для организаций</p></div> <div class="col-xs-12 col-sm-5 legal__terms hidden-mobile"><span>Выставляем счет.<br>Акт в&nbsp;течение месяца.</span></div></div> <div class="frow"><div class="col-xs-12 col-sm-10"><span><a href="//dadata.userecho.com/topics/1032" data-action="buy-legal-minimal">7 000 ₽ в&nbsp;год</a></span></div></div></div></div><div class="col-xs-12 col-sm-4 premium-plan"><div class="plan premium-plan__description"><h3>«Расширенный» <!----></h3> <!----> <div><p>100 тысяч запросов в день<br>≈ 3 000 заполненных форм</p> <p>Всё, что в «Лёгком», плюс:</p> <p><i class="fa fa-map-marker icon-small-squared"></i> Геокоординаты и&nbsp;расстояние до&nbsp;кольцевой</p> <p><i class="fa fa-list-ul icon-small-squared"></i> Все ОКВЭДы компании</p> <p><i class="fa fa-building icon-small-squared"></i> Реквизиты налоговой и&nbsp;пенсионного фонда</p></div> <!----></div> <div class="plan premium-plan__action"><div data-ref="purchase-medium"><button data-action="buy" data-plan="MEDIUM" class="button button--red plan__action">Купить за 11 500&nbsp;₽&nbsp;в&nbsp;год</button></div></div> <!----> <div class="plan premium-plan__legal legal"><div class="frow"><div class="col-xs-12 col-sm-7"><p class="legal__title">Для организаций</p></div> <div class="col-xs-12 col-sm-5 legal__terms hidden-mobile"><span><br><br></span></div></div> <div class="frow"><div class="col-xs-12 col-sm-10"><span><a href="//dadata.userecho.com/topics/1032" data-action="buy-legal-medium">14 000 ₽ в&nbsp;год</a></span></div></div></div></div><div class="col-xs-12 col-sm-4 premium-plan"><div class="plan premium-plan__description"><h3>«Всё включено» <!----></h3> <!----> <!----> <div><div class="plan__limit"><span><select id="rate_limits" name="rate_limits"><option value="200 тыс.">200 тыс.</option><option value="300 тыс.">300 тыс.</option><option value="400 тыс.">400 тыс.</option><option value="500 тыс.">500 тыс.</option><option value="600 тыс.">600 тыс.</option><option value="700 тыс.">700 тыс.</option><option value="800 тыс.">800 тыс.</option><option value="900 тыс.">900 тыс.</option><option value="1 млн.">1 млн.</option></select></span> <!----> <span>запросов в день.<br>≈ 7&nbsp;000 заполненных форм</span></div> <p>Всё, что в «Расширенном», плюс:</p> <p><i class="fa fa-home icon-small-squared"></i> Площадь и стоимость квартиры</p> <p><i class="fa fa-subway icon-small-squared"></i> Ближайшее метро и район</p> <p><i class="fa fa-book icon-small-squared"></i> Документы и&nbsp;лицензии компании</p> <p><i class="fa fa-users icon-small-squared"></i> Учредители, руководители и&nbsp;уставной капитал</p> <p><i class="fa fa-book icon-small-squared"></i> Приватные справочники
+            <a href="/suggestions/outward/#custom" target="_blank" class="link-nondecorated"><i class="fa fa-question-circle"></i></a></p></div></div> <div class="plan premium-plan__action"><div data-ref="purchase-large"><button data-action="buy" data-plan="LARGE" class="button button--red plan__action">Купить за 28 000&nbsp;₽&nbsp;в&nbsp;год</button></div></div> <!----> <div class="plan premium-plan__legal legal"><div class="frow"><div class="col-xs-12 col-sm-7"><p class="legal__title">Для организаций</p></div> <div class="col-xs-12 col-sm-5 legal__terms hidden-mobile"><span><br><br></span></div></div> <div class="frow"><div class="col-xs-12 col-sm-10"><span><a href="//dadata.userecho.com/topics/1032" data-action="buy-legal-large">28 000 ₽ в&nbsp;год</a></span></div></div></div></div></div> <!----></div></div>
+
+    </section>
+
+    <section id="box" class="module storey box">
+        <h2 class="module__title">Коробочная версия</h2>
+        <div class="frow">
+            <div class="col-xs-12 col-sm-7">
+                <p>Устанавливается на ваш сервер.</p>
+                <p>Подходит, если больше 1 млн запросов в&nbsp;день, или отдел безопасности запрещает использовать&nbsp;«облака».</p>
+                <p>Включает виджет для пользователей и интерфейсы для&nbsp;программ: SOAP и REST API.</p>
+                <p>Подключается к&nbsp;любым корпоративным справочникам.</p>
+                <h3>Стоимость</h3>
+                <p>400&nbsp;тыс.&nbsp;₽ за&nbsp;адреса или 700&nbsp;тыс.&nbsp;₽ за&nbsp;все компоненты. Включает лицензию и&nbsp;обновления на&nbsp;3 года.</p>
+                <p>
+                    <a class="button button--red" href="mailto:info@dadata.ru?subject=Коробочная версия подсказок">
+                        Запросить договор</a>
+                </p>
+                <p><a href="https://dadata.userecho.com/topics/1066">Прочие условия</a></p>
+            </div>
+            <div class="col-xs-12 col-sm-5 hidden-mobile">
+                <img src="/static/i/suggestions/suggestions-box.png">
+            </div>
+        </div>
+    </section>
+
+
+</div>
+
+
+<div id="footer" class="footer">
+    <footer class="storey">
+        <div class="frow footer__menu">
+            <div class="col-xs-12 col-sm-3">
+                <div class="footer__menu-item">
+                    <a href="/pricing/">Тарифы</a>
+                </div>
+                <div class="footer__menu-item">
+                    <a href="/offer/">Оферта и&nbsp;документы</a>
+                </div>
+                <div class="footer__menu-item">
+                    <a href="http://status.dadata.ru" target="_blank">Доступность</a>
+                </div>
+                <div class="footer__menu-item">
+                    <a href="/about/">О сервисе</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <div class="footer__menu-item">
+                    <a href="/support/">Служба поддержки</a>
+                </div>
+                <div class="footer__menu-item">
+                    <a href="https://twitter.com/dadata_ru" target="_blank">Новости</a>
+                </div>
+
+                <div class="footer__menu-item">
+                    <a href="https://blog.hflabs.ru/tag/dadata-ru/" target="_blank">Блог</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <div class="footer__menu-item">
+                    <div>ООО «Дейта Кью»,
+                        ИНН <a href="/find/party/7721581040/">7721581040</a>
+                    </div>
+                    <div>
+                        <a class="footer__phone" href="tel:+74952201962">+7 495 220-19-62</a>
+                        <small>с 10 до 18, пн–пт</small>
+                    </div>
+                    <div>
+                        <a href="mailto:info@dadata.ru">info@dadata.ru</a>
+                    </div>
+                </div>
+                <div class="footer__menu-item">
+                    <a href="/static/documents/Политика_обработки_персональных_данных.pdf">Политика конфиденциальности</a><br>
+                    оператор ПД №
+                    <a href="https://rkn.gov.ru/personal-data/register/?id=77-18-009925" target="_blank">77-18-009925</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <div class="footer__copyright hidden-mobile"></div>
+                <div class="footer__company">
+                    <div class="footer__share">
+                        <a class="footer__share-item link-image" href="https://vk.com/dadata" target="_blank"><i class="fa fa-vk"></i></a>
+                        <a class="footer__share-item link-image" href="https://www.facebook.com/dadatago/" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a class="footer__share-item link-image" href="https://twitter.com/dadata_ru" target="_blank"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+
+<!-- Fancybox alerts go here. -->
+<div style="display: none;">
+    <div id="spinner">
+        <img src="/static/i/spinner.gif" width="100" height="100" alt="ajax-spinner">
+    </div>
+</div>
+<div style="display: none;">
+    <div class="alert_popup" id="alert_popup">
+        <div class="main">
+            <h2 class="alert_popup_title"><!-- Alert status goes here. --></h2>
+            <div class="alert_popup_text">
+                <p><!-- Alert message goes here. --></p>
+            </div>
+        </div>
+    </div>
+    <div class="authorization_popup" id="success_message_popup">
+        <header>
+            <div class="logo"></div>
+        </header>
+        <div class="main">
+        </div>
+    </div>
+
+
+
+    <div class="authorization_popup" id="registration_popup">
+        <header>
+            <div class="logo"></div>
+            <p class="authorization_header">
+
+                Зарегистрируйтесь, чтобы подключить подсказки
+
+            </p>
+            <p class="authorization_subheader">
+
+                до 10 тыс запросов бесплатно
+
+            </p>
+        </header>
+        <div class="main">
+
+            <form method="post" id="registration-form" action="/profile/register/" autocomplete="off">
+                <input type="hidden" name="csrfmiddlewaretoken" value="foqyhnaISY2GCgCeloJkbijBfdzZwvfD">
+
+
+                <input class="js_next_field" type="hidden" name="next" value="/suggestions/">
+
+                <div class="form-errors">
+                </div>
+                <table>
+
+
+
+                    <tbody><tr>
+                        <th>
+
+                            <label for="id_reg-full_name">Имя</label>
+
+                        </th>
+                        <td>
+
+                            <input data-suggest="name" id="id_reg-full_name" maxlength="100" name="reg-full_name" type="text" autofocus="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="suggestions-input" style="box-sizing: border-box;">
+                            <div class="helptext full_name-field-errors" data-help-text="чтобы обращаться к&nbsp;вам в&nbsp;письмах">
+                                чтобы обращаться к&nbsp;вам в&nbsp;письмах
+                            </div>
+
+                        </td>
+                    </tr>
+
+
+
+
+                    <tr>
+                        <th>
+
+                            <label for="id_reg-email">Почта</label>
+
+                        </th>
+                        <td>
+
+                            <input data-suggest="email" id="id_reg-email" maxlength="75" name="reg-email" required="" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="suggestions-input" style="box-sizing: border-box;">
+                            <div class="helptext email-field-errors" data-help-text="шлем состояние обработки и баланс">
+                                шлем состояние обработки и баланс
+                            </div>
+
+                        </td>
+                    </tr>
+
+
+
+
+                    <tr>
+                        <th>
+
+                            <label for="id_reg-password">Пароль</label>
+
+                        </th>
+                        <td>
+
+                            <input id="id_reg-password" name="reg-password" required="" type="password">
+                            <div class="helptext password-field-errors" data-help-text="">
+
+                            </div>
+
+                        </td>
+                    </tr>
+
+
+
+
+
+
+                    <tr>
+                        <th>
+
+                        </th>
+                        <td>
+
+                            <div class="helptext">
+                                <div class="left-icheckbox">
+                                    <div class="icheckbox_minimal-grey checked" style="position: relative;"><input checked="checked" class="icheckbox" id="id_reg-is_subscribed" name="reg-is_subscribed" type="checkbox" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                                </div>
+                                <label for="id_reg-is_subscribed">Быть в&nbsp;курсе новых возможностей и&nbsp;скидок</label>
+
+                            </div>
+
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <th></th>
+                        <td class="submit">
+                            <input type="submit" value="Зарегистрироваться" class="button">
+                        </td>
+                    </tr>
+                    </tbody></table>
+            </form>
+
+            <p class="terms">
+                Регистрируясь, вы принимаете <a href="/terms" target="_blank">публичную оферту</a>
+            </p>
+
+
+
+            <div class="social-auth cfx">
+                <div class="hint">Или войдите с&nbsp;помощью</div>
+                <ul>
+                    <li>
+                        <a href="/social/login/facebook/?next=/suggestions/&amp;generate_token=0" class="auth_button facebook" title="Facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/social/login/twitter/?next=/suggestions/&amp;generate_token=0" class="auth_button twitter" title="Twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/social/login/vk-oauth2/?next=/suggestions/&amp;generate_token=0" class="auth_button vkontakte" title="Вконтакте">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer class="authorization_popup__footer">
+            Уже зарегистрированы? <a class="fancybox" href="#authorization_popup">Войти</a>
+        </footer>
+    </div>
+
+
+    <div class="authorization_popup " id="authorization_popup">
+        <header>
+            <div class="logo"></div>
+            <div class="signup-link">Войдите или <a class="fancybox" href="#registration_popup">зарегистрируйтесь</a></div>
+        </header>
+        <div class="authorization_popup__footer">
+
+            <form method="post" id="login-form" action="/profile/ajax-login/" autocomplete="off">
+                <input type="hidden" name="csrfmiddlewaretoken" value="foqyhnaISY2GCgCeloJkbijBfdzZwvfD">
+
+
+                <input class="js_next_field" type="hidden" name="next" value="/suggestions/">
+
+                <div class="form-errors">
+                </div>
+                <table>
+
+
+
+                    <tbody><tr>
+                        <th>
+
+                            <label for="id_login-email">Почта</label>
+
+                        </th>
+                        <td>
+
+                            <input data-first="" id="id_login-email" maxlength="140" name="login-email" required="" type="text">
+                            <div class="helptext email-field-errors" data-help-text="">
+
+                            </div>
+
+                        </td>
+                    </tr>
+
+
+
+
+                    <tr>
+                        <th>
+
+                            <label for="id_login-password">Пароль</label>
+
+                        </th>
+                        <td>
+
+                            <input id="id_login-password" name="login-password" required="" type="password">
+                            <div class="helptext password-field-errors" data-help-text="">
+
+                            </div>
+
+                        </td>
+                    </tr>
+
+
+
+
+                    <tr>
+                        <th>
+
+                        </th>
+                        <td>
+
+                            <div class="helptext">
+                                <div class="left-icheckbox">
+                                    <div class="icheckbox_minimal-grey" style="position: relative;"><input class="icheckbox" id="id_login-remember_me" name="login-remember_me" type="checkbox" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                                </div>
+                                <label for="id_login-remember_me">Запомнить меня</label>
+
+                                <a id="password_reset" href="#password_reset_popup" class="fancybox password-reset">Забыли пароль?</a>
+
+                            </div>
+
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <th></th>
+                        <td class="submit">
+                            <input type="submit" value="Войти в систему" class="button">
+                        </td>
+                    </tr>
+                    </tbody></table>
+            </form>
+
+            <div class="main">
+
+
+                <div class="social-auth cfx">
+                    <div class="hint">Или войдите с&nbsp;помощью</div>
+                    <ul>
+                        <li>
+                            <a href="/social/login/facebook/?next=/suggestions/&amp;generate_token=0" class="auth_button facebook" title="Facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/social/login/twitter/?next=/suggestions/&amp;generate_token=0" class="auth_button twitter" title="Twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/social/login/vk-oauth2/?next=/suggestions/&amp;generate_token=0" class="auth_button vkontakte" title="Вконтакте">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="authorization_popup" id="password_reset_popup">
+        <header>
+            <div class="logo"></div>
+        </header>
+        <div class="authorization_popup__footer">
+            <p>Укажите свой адрес электронной почты, и мы отправим на него инструкции по восстановлению пароля.</p>
+
+            <form method="post" id="password-reset-form" action="/profile/password_reset/" autocomplete="off">
+                <input type="hidden" name="csrfmiddlewaretoken" value="foqyhnaISY2GCgCeloJkbijBfdzZwvfD">
+
+
+                <div class="form-errors">
+                </div>
+                <table>
+
+
+
+                    <tbody><tr>
+                        <th>
+
+                            <label for="id_reset-email">Почта:</label>
+
+                        </th>
+                        <td>
+
+                            <input id="id_reset-email" maxlength="254" name="reset-email" required="" type="text">
+                            <div class="helptext email-field-errors" data-help-text="">
+
+                            </div>
+
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <th></th>
+                        <td class="submit">
+                            <input type="submit" value="Получить инструкции" class="button">
+                        </td>
+                    </tr>
+                    </tbody></table>
+            </form>
+
+            <div class="main">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="authorization_popup" id="suggestions_registration_popup">
+        <header>
+            <div class="logo"></div>
+            <p class="authorization_header">Подписка «Подсказок» на год</p>
+        </header>
+        <div class="main">
+            <form autocomplete="off" method="post" class="robokassa-form robokassa-form-initial " action="/payment-systems/get-data/?redirect_after_payment=/suggestions/#premium">
+                <input type="hidden" name="csrfmiddlewaretoken" value="foqyhnaISY2GCgCeloJkbijBfdzZwvfD">
+                <table class="robokassa-fields">
+
+                    <tbody><tr style="display:none;">
+                        <th>
+                            <label for="id_shopId">Shopid:</label>
+
+                            <span class="required">*&nbsp;</span>
+
+                        </th>
+                        <td>
+                            <input id="id_shopId" name="shopId" readonly="readonly" type="text" value="53632">
+
+                            <div class="field-errors shopId-field-errors"></div>
+                        </td>
+                    </tr>
+
+                    <tr style="display:none;">
+                        <th>
+                            <label for="id_scid">Scid:</label>
+
+                            <span class="required">*&nbsp;</span>
+
+                        </th>
+                        <td>
+                            <input id="id_scid" name="scid" readonly="readonly" type="text" value="50735">
+
+                            <div class="field-errors scid-field-errors"></div>
+                        </td>
+                    </tr>
+
+                    <tr style="display:none;">
+                        <th>
+                            <label for="id_customerNumber">Customernumber:</label>
+
+                        </th>
+                        <td>
+                            <input id="id_customerNumber" maxlength="60" name="customerNumber" type="hidden" value="db78a444081c4ec281e4fca60f4f4949">
+
+                            <div class="field-errors customerNumber-field-errors"></div>
+                        </td>
+                    </tr>
+
+                    <tr style="display:none;">
+                        <th>
+                            <label for="id_sum">Сумма заказа:</label>
+
+                            <span class="required">*&nbsp;</span>
+
+                        </th>
+                        <td>
+                            <input id="id_sum" name="sum" readonly="readonly" type="text" value="0">
+
+                            <div class="field-errors sum-field-errors"></div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <label for="id_cps_email">E-mail:</label>
+
+                            <span class="required">*&nbsp;</span>
+
+                        </th>
+                        <td>
+                            <input id="id_cps_email" name="cps_email" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="suggestions-input" style="box-sizing: border-box;">
+
+                            <span class="helptext">шлем баланс счета</span>
+
+                            <div class="field-errors cps_email-field-errors"></div>
+                        </td>
+                    </tr>
+
+                    <tr style="display:none;">
+                        <th>
+                            <label for="id_paymentType">Paymenttype:</label>
+
+                        </th>
+                        <td>
+                            <input id="id_paymentType" maxlength="60" name="paymentType" type="hidden">
+
+                            <div class="field-errors paymentType-field-errors"></div>
+                        </td>
+                    </tr>
+
+                    <tr style="display:none;">
+                        <th>
+                            <label for="id_shopSuccessURL">Shopsuccessurl:</label>
+
+                        </th>
+                        <td>
+                            <input id="id_shopSuccessURL" maxlength="1024" name="shopSuccessURL" type="text" value="https://dadata.ru/kassa/success">
+
+                            <div class="field-errors shopSuccessURL-field-errors"></div>
+                        </td>
+                    </tr>
+
+                    <tr style="display:none;">
+                        <th>
+                            <label for="id_shpextend_premium_suggestions">Shpextend premium suggestions:</label>
+
+                        </th>
+                        <td>
+                            <input id="id_shpextend_premium_suggestions" maxlength="60" name="shpextend_premium_suggestions" type="hidden" value="yes">
+
+                            <div class="field-errors shpextend_premium_suggestions-field-errors"></div>
+                        </td>
+                    </tr>
+
+                    <tr style="display:none;">
+                        <th>
+                            <label for="id_shpregister_new_user">Shpregister new user:</label>
+
+                        </th>
+                        <td>
+                            <input id="id_shpregister_new_user" maxlength="60" name="shpregister_new_user" type="hidden" value="yes">
+
+                            <div class="field-errors shpregister_new_user-field-errors"></div>
+                        </td>
+                    </tr>
+
+                    <tr style="display:none;">
+                        <th>
+                            <label for="id_shpis_secure">Shpis secure:</label>
+
+                        </th>
+                        <td>
+                            <input id="id_shpis_secure" maxlength="60" name="shpis_secure" type="hidden" value="yes">
+
+                            <div class="field-errors shpis_secure-field-errors"></div>
+                        </td>
+                    </tr>
+
+                    <tr style="display:none;">
+                        <th>
+                            <label for="id_shpprimary_referer">Shpprimary referer:</label>
+
+                        </th>
+                        <td>
+                            <input id="id_shpprimary_referer" maxlength="60" name="shpprimary_referer" type="hidden" value="https://idp-test.vwgroup.ru/auth/realms/vw/account/">
+
+                            <div class="field-errors shpprimary_referer-field-errors"></div>
+                        </td>
+                    </tr>
+
+                    <tr style="display:none;">
+                        <th>
+                            <label for="id_shpis_subscribed">Shpis subscribed:</label>
+
+                        </th>
+                        <td>
+                            <input id="id_shpis_subscribed" maxlength="60" name="shpis_subscribed" type="hidden" value="yes">
+
+                            <div class="field-errors shpis_subscribed-field-errors"></div>
+                        </td>
+                    </tr>
+
+                    <tr style="display:none;">
+                        <th>
+                            <label for="id_shppremium_suggestions_rate">Shppremium suggestions rate:</label>
+
+                        </th>
+                        <td>
+                            <input id="id_shppremium_suggestions_rate" maxlength="60" name="shppremium_suggestions_rate" type="hidden">
+
+                            <div class="field-errors shppremium_suggestions_rate-field-errors"></div>
+                        </td>
+                    </tr>
+
+                    <tr style="display:none;">
+                        <th>
+                            <label for="id_shppremium_suggestions_rate_limit">Shppremium suggestions rate limit:</label>
+
+                        </th>
+                        <td>
+                            <input id="id_shppremium_suggestions_rate_limit" maxlength="60" name="shppremium_suggestions_rate_limit" type="hidden">
+
+                            <div class="field-errors shppremium_suggestions_rate_limit-field-errors"></div>
+                        </td>
+                    </tr>
+
+                    <tr style="display:none;">
+                        <th>
+                            <label for="id_shpmerge_id">Shpmerge id:</label>
+
+                        </th>
+                        <td>
+                            <input id="id_shpmerge_id" maxlength="60" name="shpmerge_id" type="hidden">
+
+                            <div class="field-errors shpmerge_id-field-errors"></div>
+                        </td>
+                    </tr>
+
+                    <tr style="display:none;">
+                        <th>
+                            <label for="id_shpinv_number">Shpinv number:</label>
+
+                        </th>
+                        <td>
+                            <input id="id_shpinv_number" maxlength="60" name="shpinv_number" type="hidden">
+
+                            <div class="field-errors shpinv_number-field-errors"></div>
+                        </td>
+                    </tr>
+
+                    <tr style="display:none;">
+                        <th>
+                            <label for="id_ym_merchant_receipt">Ym merchant receipt:</label>
+
+                            <span class="required">*&nbsp;</span>
+
+                        </th>
+                        <td>
+                            <input id="id_ym_merchant_receipt" maxlength="60" name="ym_merchant_receipt" type="hidden" value="STUB">
+
+                            <div class="field-errors ym_merchant_receipt-field-errors"></div>
+                        </td>
+                    </tr>
+
+
+
+                    <tr>
+                        <th>
+                        </th>
+                        <td>
+                            <div class="helptext">
+                                <div class="left-icheckbox">
+                                    <div class="icheckbox_minimal-grey checked" style="position: relative;"><input type="checkbox" class="icheckbox" id="id_None-shpis_subscribed_checkbox" checked="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                                </div>
+                                <label for="id_None-shpis_subscribed_checkbox">Быть в&nbsp;курсе новых возможностей и&nbsp;скидок</label>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th></th>
+                        <td class="submit">
+                            <button type="submit" class="button button--red">Оплатить ?? руб.</button>
+                        </td>
+                    </tr>
+                    </tbody></table>
+            </form>
+            <p class="terms">
+                Регистрируясь на сайте, вы принимаете <a href="/terms" target="_blank">публичную оферту</a>
+            </p>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+
+<script src="https://connect.facebook.net/signals/config/891850000956730?v=2.8.35&amp;r=stable" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://cdn.userecho.com/js/widget-1.4.gz.js"></script><script src="/static/js/lib/jquery-2.1.0.min.js"></script>
+<script src="/static/js/lib/require.min.js"></script>
+
+<script id="server-side-vars">
+var cfg = JSON.parse('{"paths": {"process": "process", "modernizr": "lib/modernizr.custom.41821", "suggestions": "suggestions", "jquery.migrate": "lib/jquery-migrate-1.2.1", "jquery.counter": "lib/jquery.counter", "jquery.fancybox": "lib/jquery.fancybox.pack", "jquery.placeholder": "lib/jquery.placeholder", "jquery.form": "lib/jquery.form", "main": "main", "jquery.bxslider": "lib/jquery.bxslider.min", "jsrender": "lib/jsrender", "throbber": "lib/throbber", "payments_legal": "payments_legal", "jquery.xdomainrequest": "lib/jquery.xdomainrequest-1.0.1.min", "jquery.suggestions": "lib/jquery.suggestions.min", "jquery.hashchange": "lib/jquery.hashchange", "jquery.icheck": "lib/jquery.icheck.min", "vue": "vue", "lodash": "lib/lodash.min", "payment_systems": "payment_systems", "vue.core": "lib/vue", "profiles": "profiles", "jquery.stickytableheaders": "lib/jquery.stickytableheaders", "dropzone": "lib/dropzone"}, "baseUrl": "/static/js/build/18.10.2", "shim": {"jsrender": {"deps": ["jquery"]}, "jquery.xdomainrequest": {"deps": ["jquery"]}, "jquery.migrate": {"deps": ["jquery"]}, "analytics": {"deps": ["jquery"]}, "jquery.counter": {"deps": ["jquery"]}, "jquery.hashchange": {"deps": ["jquery"]}, "jquery.icheck": {"deps": ["jquery"]}, "jquery.fancybox": {"deps": ["jquery"]}, "jquery.suggestions": {"deps": ["jquery"]}, "jquery.placeholder": {"deps": ["jquery"]}, "jquery.form": {"deps": ["jquery"]}, "jquery.stickytableheaders": {"deps": ["jquery"]}, "jquery.bxslider": {"deps": ["jquery"]}}}');
+require.config(cfg);
+
+window.DA = {};
+
+window.DA.settings = {
+API_KEY: "5ef98f5781a106962077fb18109095f9f11ebac1",
+TRY_DOCUMENT_MAX_SIZE: 20971520,
+TRY_DOCUMENT_CONTENT_TYPES: ["text/plain", "text/csv", "text/x-csv", "text/comma-separated-values", "text/tsv", "application/csv", "application/txt", "application/vnd.ms-excel", "application/vnd.openxmlformats", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "application/octet-stream"],
+TRY_DOCUMENT_SUPPORTED_FORMATS: ["Excel", "CSV"],
+FILE_WITHOUT_RECORDS_MSG: "Похоже, что файл пустой, обрабатывать нечего.",
+PROCESS_CHECK_COST_INTERVAL: 30,
+DISABLE_SUGGESTIONS: false,
+MERGING_MAX_FILES: 5,
+DEBUG: false
+};
+
+window.DA.user = {
+isAuthenticated: false,
+username: "",
+id: null
+};
+
+window.DA.clean = null
+jQuery.migrateMute = true;
+</script>
+
+<script src="/static/js/build/18.10.2/common.js"></script>
+<!--[if lt IE 10]>
+<script>
+require(["jquery.xdomainrequest", "ie"]);
+</script>
+<![endif]-->
+
+
+
+
+<script type="text/javascript">
+var _ues = {
+host: 'dadata.userecho.com',
+forum: '17942',
+lang: 'ru',
+tab_corner_radius: 5,
+tab_font_size: 20,
+tab_image_hash: '0LfQsNC00LDRgtGMINCy0L7Qv9GA0L7RgQ%3D%3D',
+tab_chat_hash: '0YfQsNGC',
+tab_alignment: 'right',
+tab_text_color: '#FFFFFF',
+tab_text_shadow_color: '#00000055',
+tab_bg_color: '#94989E',
+tab_hover_color: '#94989E'
+
+};
+(function() {
+var _ue = document.createElement('script');
+_ue.type = 'text/javascript';
+_ue.async = true;
+_ue.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.userecho.com/js/widget-1.4.gz.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(_ue, s);
+})();
+</script>
+
+
+<!-- Google analytics -->
+<script>
+(function(i, s, o, g, r, a, m) {
+i['GoogleAnalyticsObject'] = r;
+i[r] = i[r] || function() {
+(i[r].q = i[r].q || []).push(arguments)
+}, i[r].l = 1 * new Date();
+a = s.createElement(o),
+m = s.getElementsByTagName(o)[0];
+a.async = 1;
+a.src = g;
+m.parentNode.insertBefore(a, m)
+})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+ga('create', 'UA-39399831-1', 'dadata.ru');
+ga('send', 'pageview');
+
+</script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function(d, w, c) {
+(w[c] = w[c] || []).push(function() {
+try {
+w.yaCounter22515688 = new Ya.Metrika({
+id: 22515688,
+webvisor: true,
+clickmap: true,
+trackLinks: true,
+accurateTrackBounce: true
+});
+} catch (e) {}
+});
+var n = d.getElementsByTagName("script")[0],
+s = d.createElement("script"),
+f = function() {
+n.parentNode.insertBefore(s, n);
+};
+s.type = "text/javascript";
+s.async = true;
+s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+if (w.opera == "[object Opera]") {
+d.addEventListener("DOMContentLoaded", f, false);
+} else {
+f();
+}
+})(document, window, "yandex_metrika_callbacks");
+</script><noscript><div><img src="//mc.yandex.ru/watch/22515688" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f, b, e, v, n, t, s) {
+if (f.fbq) return;
+n = f.fbq = function() {
+n.callMethod ?
+n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+};
+if (!f._fbq) f._fbq = n;
+n.push = n;
+n.loaded = !0;
+n.version = '2.0';
+n.queue = [];
+t = b.createElement(e);
+t.async = !0;
+t.src = v;
+s = b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t, s)
+}(window,
+document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '891850000956730');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=891850000956730&ev=PageView&noscript=1"/></noscript>
+<!-- End Facebook Pixel Code -->
+
+
+
+
+
+
+<script>
+require(["main/suggestions"]);
+</script>
