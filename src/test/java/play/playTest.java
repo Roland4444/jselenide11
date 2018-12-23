@@ -20,23 +20,19 @@ import static org.junit.jupiter.api.Assertions.*;
 class playTest {
     public Extractor ext = new Extractor();
     public final String dadata ="https://dadata.ru/suggestions/#address";
-    @org.junit.jupiter.api.Test
-    void letsopen() {
-        open("https://fias.nalog.ru/ExtendedSearchPage.aspx");
-      //  $(By.name("user.name")).setValue("johny");
-        $("#submit").click();
-    }
+
 
     @org.junit.jupiter.api.Test
     void letsopen2() throws InterruptedException {
         open("https://www.google.com/");
         $(By.className("gLFyf")).setValue("Search").pressEnter();
-        Thread.sleep(10000);
+        Thread.sleep(1000);
         //  $(By.name("user.name")).setValue("johny");
       //  $("#submit").click();
     }
 
-    @org.junit.jupiter.api.Test
+
+   // @org.junit.jupiter.api.Test
     void letsopen3() throws InterruptedException {
         open("https://fias.nalog.ru/ExtendedSearchPage.aspx");
         $(By.xpath("//*[text()='Административно-территориальное']")).click();
@@ -46,7 +42,6 @@ class playTest {
         //  $(By.name("user.name")).setValue("johny");
         //  $("#submit").click();
     }
-
 
     @Test
     void dadaopen() throws InterruptedException, IOException {
@@ -72,7 +67,7 @@ class playTest {
     }
 
 
-    @Test
+
     void compareStrings() throws IOException {
         var Genned = new String(Files.readAllBytes(Paths.get(new File("dump/genned.html").getPath())));
         var Static = new String(Files.readAllBytes(Paths.get(new File("dump/static.html").getPath())));
